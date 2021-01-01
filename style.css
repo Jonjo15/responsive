@@ -237,3 +237,7 @@ a {
   object-fit: cover;
   max-width: 100%;
 }
+.category-container ul {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
