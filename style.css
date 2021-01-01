@@ -57,7 +57,22 @@ a {
   background-size: cover;
   background-position: right;
   grid-row: 1 / span 2;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
+.date {
+  align-self: flex-start;
+  margin: 5px;
+  width: 400px;
+}
+.bottom {
+  padding: 15px;
+}
+.large-title {
+  font-size: 3rem;
+}
+
 .article-top-right {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/Worm-cancer-hed-University-of-Dundee-796x420.jpg");
   background-repeat: no-repeat;
@@ -68,6 +83,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.article-bottom-right,
+.article-top-right {
+  display: flex;
+  flex-direction: column-reverse;
+}
 .latest {
   max-width: 1200px;
   height: 60vh;
@@ -76,14 +96,22 @@ a {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 3fr 3fr;
   grid-gap: 20px;
-  margin-bottom: 10vh;
+  margin-bottom: 25vh;
 }
 .latest header {
   grid-column: 1 / -1;
 }
 .latest div {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
 }
+.latest div img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
 .funding {
   max-width: 1200px;
   height: 60vh;
