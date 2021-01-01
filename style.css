@@ -38,8 +38,115 @@ a {
 .second-nav :last-child {
   grid-column-end: -1;
 }
+.main {
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 50% 50%;
+  margin: 10px;
+  grid-gap: 5px;
+  margin-bottom: 30vh;
+}
 .full-column {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/1-copy-25-796x417.jpg");
-  height: 720px;
-  width: 720px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  grid-row: 1 / span 2;
+}
+.article-top-right {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/Worm-cancer-hed-University-of-Dundee-796x420.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.article-bottom-right {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/1-copy-42-796x417.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.latest {
+  max-width: 1200px;
+  height: 60vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 3fr 3fr;
+  grid-gap: 20px;
+  margin-bottom: 10vh;
+}
+.latest header {
+  grid-column: 1 / -1;
+}
+.latest div {
+  background-color: white;
+}
+.funding {
+  max-width: 1200px;
+  height: 60vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 100%;
+  margin-bottom: 30vh;
+}
+.funding header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.funding ul {
+  list-style: none;
+  display: flex;
+  align-content: center;
+}
+.funding-card-container {
+  display: flex;
+}
+.funding-card-container div {
+  background-color: white;
+  flex: 1;
+  margin-right: 20px;
+}
+.funding-card-container :last-child {
+  margin: 0;
+}
+.categories {
+  display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  margin-bottom: 25vh;
+}
+.categories div {
+  height: 80vh;
+  background-color: white;
+}
+.bottom-nav {
+  background-color: rgb(33, 33, 33);
+  height: 25vh;
+  display: grid;
+  grid-gap: 20px;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+}
+.bottom-nav ul {
+  list-style: none;
+  display: flex;
+  color: white;
+}
+.bottom-nav ul li {
+  margin-right: 5px;
+  cursor: pointer;
+}
+.copyright {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.copyright small {
+  cursor: pointer;
 }
