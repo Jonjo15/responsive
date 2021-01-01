@@ -39,6 +39,7 @@ a {
   grid-column-end: -1;
 }
 .main {
+  color: white;
   display: grid;
   height: 80vh;
   grid-template-columns: 2fr 1fr;
@@ -46,6 +47,9 @@ a {
   margin: 10px;
   grid-gap: 5px;
   margin-bottom: 30vh;
+}
+.main article {
+  cursor: pointer;
 }
 .full-column {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/1-copy-25-796x417.jpg");
