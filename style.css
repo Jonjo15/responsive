@@ -100,6 +100,7 @@ a {
 }
 .latest header {
   grid-column: 1 / -1;
+  cursor: pointer;
 }
 .latest div {
   background-color: white;
@@ -111,7 +112,9 @@ a {
   object-fit: cover;
   max-width: 100%;
 }
-
+.top-card img {
+  width: 50px;
+}
 .funding {
   max-width: 1200px;
   height: 60vh;
