@@ -195,6 +195,7 @@ a {
 .categories div {
   height: 80vh;
   background-color: white;
+  overflow: hidden;
 }
 .bottom-nav {
   background-color: rgb(33, 33, 33);
@@ -226,6 +227,7 @@ a {
 .category-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 .category-mid {
   display: grid;
