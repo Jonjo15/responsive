@@ -103,7 +103,7 @@ a {
   cursor: pointer;
 }
 .latest div {
-  background-color: white;
+  background-color: grey;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -197,13 +197,14 @@ a {
   overflow: hidden;
 }
 .bottom-nav {
-  background-color: rgb(33, 33, 33);
+  background-color: #555;
   height: 25vh;
   display: grid;
   grid-gap: 20px;
   align-content: center;
   justify-content: center;
   justify-items: center;
+  margin-top: 40vh;
 }
 .bottom-nav ul {
   list-style: none;
@@ -219,6 +220,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: black;
+  color: grey;
 }
 .copyright small {
   cursor: pointer;
@@ -260,4 +263,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+}
+.line-through {
+  text-decoration: line-through;
 }
