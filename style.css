@@ -13,7 +13,11 @@
 #toggle {
   display: none;
 }
-
+.toggle-nav {
+  display: none;
+  background-color: black;
+  color: white;
+}
 body {
   background-color: grey;
 }
@@ -293,6 +297,22 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    position: fixed;
+    height: 65px;
+    width: 100%;
+    top: 0;
+  }
+  .toggle-nav {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 65px;
+    padding: 5px;
+    z-index: 10;
+  }
+  .toggle-nav ul li {
+    margin-bottom: 15px;
   }
   .first-nav {
     display: none;
