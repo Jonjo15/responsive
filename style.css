@@ -193,7 +193,6 @@ a {
   overflow: hidden;
 }
 .categories div {
-  height: 80vh;
   background-color: white;
   overflow: hidden;
 }
@@ -225,12 +224,23 @@ a {
   cursor: pointer;
 }
 .category-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 5% 40% 1fr 1fr;
+  grid-gap: 30px;
+  padding: 15px;
+  align-items: center;
+  overflow: hidden;
+}
+.category-container h2 {
+  text-align: left;
+  display: block;
+  width: 100%;
 }
 .category-mid {
+  align-self: center;
   display: grid;
+  align-items: center;
   grid-template-columns: 3fr 1fr;
 }
 .category-mid img {
@@ -240,4 +250,14 @@ a {
 .category-container ul {
   padding-left: 20px;
   padding-bottom: 10px;
+}
+.category-poster {
+  display: flex;
+  height: 100%;
+  padding: 10px;
+  flex-direction: column-reverse;
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2020/12/winklevossbitcoin-368x276.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
